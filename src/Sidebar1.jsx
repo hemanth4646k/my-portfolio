@@ -5,10 +5,10 @@ export default function Sidebar1() {
     
   return (
     
-      <div className={`p-2 transition-all bg-slate-900 duration-500 ease-in-out delay-200 ${open? "lg:w-3/13 w-[59px]":"w-[59px]"}`}>
+      <div className={`p-2  transition-all bg-slate-900 duration-500 ease-in-out delay-200 ${open? "lg:w-3/13 w-[59px]":"lg:w-[59px] w-[190px] "}`}>
         <div className="flex bg-red-200 rounded-xl max-h-[48px] justify-between flex-row-reverse p-1"  >
             <img className="cursor-pointer w-[40px] rounded-xl" src="../../sidebar-flip-svgrepo-com.svg" alt="" onClick={()=>{setOpen(x=>!x);}}/>
-            <div className={`w-full p-2 transition-all  ${open?"lg:opacity-100 lg:scale-100 lg:delay-700":""} opacity-0 scale-0 `} >
+            <div className={`w-full flex p-2 transition-all items-center ${open?"lg:opacity-100 lg:scale-100 lg:delay-700 scale-0 opacity-0":"lg:opacity-0 lg:scale-0 lg:delay-0 delay-700 scale-75 opacity-100"}  `} >
                 Toggle Sidebar
             </div>
 
@@ -32,7 +32,7 @@ function SidebarOption({open,name}) {
         alt="Home"
         />
         <div className="w-full grid grid-cols-12">
-        <div className={`p-2 col-start-3 col-span-3 transition-all ${open?"lg:scale-100 lg:delay-700 lg:opacity-100":""} scale-0 opacity-0`}>{name}</div>
+        <div className={`p-2 col-start-3 col-span-3 transition-all ${open?"lg:scale-100 lg:delay-700 lg:opacity-100 scale-0 opacity-0":"lg:scale-0 lg:opacity-0 lg:delay-0 scale-100 opacity-100 delay-700"} `}>{name}</div>
 
         </div>
     </div>
