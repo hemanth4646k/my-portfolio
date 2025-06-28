@@ -47,7 +47,7 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit labore eligendi fugit.</p>
-            <Button className="md:w-80 md:h-16 w-60 h-12" id="button1" text="see my work"></Button>
+            <Button className="md:w-80 md:h-16 w-60 h-12" id="button1" text="See my work"></Button>
           </div>
             
         </header>
