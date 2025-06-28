@@ -18,8 +18,8 @@ const Showcase = () => {
         project1Ref.current,
         project2Ref.current,
         project3Ref.current,
-        project4Ref.current,
-        project5Ref.current,
+        // project4Ref.current,
+        // project5Ref.current,
       ];
     projects.forEach((project, index) => {
       gsap.fromTo(
@@ -48,7 +48,7 @@ const Showcase = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="work" className="app-showcase">
+    <section ref={sectionRef} id="work" className="z-100 app-showcase">
       <div className="w-full">
         <div className="showcase-layout">
           {/* leftside */}
