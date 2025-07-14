@@ -82,6 +82,7 @@ section {
 
   .hero-layout {
     @apply relative z-10 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    
   }
 
   .hero-text {

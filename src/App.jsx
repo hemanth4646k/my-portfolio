@@ -3,8 +3,18 @@ import "./App.css";
 import { Hero } from "./sections/Hero";
 import Showcase from "./sections/Showcase";
 import OceanScene from "./sections/HeroModel/OceanScene";
+import { PanProvider, usePan } from "./context/PanProvider";
 
 function App() {
+  return (
+    <PanProvider>
+      <AppComponent />
+    </PanProvider>
+  );
+}
+
+function AppComponent() {
+  const { handlePointerDown, handlePointerMove, handlePointerUp } = usePan();
   return (
     <div>
       <div className="hero-3d-layout">
@@ -17,11 +27,14 @@ function App() {
             background: "#000",
             zIndex: "0",
           }}
+          onPointerDown={handlePointerDown}
+          onPointerUp={handlePointerUp}
+          onPointerMove={handlePointerMove}
         >
           <OceanScene />
         </Canvas>
       </div>
-      <div className="relative select-none">
+      <div className="relative select-none" style={{ pointerEvents: "none" }}>
         <Hero></Hero>
         <Showcase></Showcase>
       </div>

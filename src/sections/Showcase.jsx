@@ -48,7 +48,7 @@ const Showcase = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="work" className="z-100 app-showcase">
+    <section ref={sectionRef} id="work" className="z-100 app-showcase pointer-events-auto">
       <div className="w-full">
         <div className="showcase-layout">
           {/* leftside */}
