@@ -1,7 +1,11 @@
 import { Canvas } from "@react-three/fiber";
-import "./App.css";
+import Navbar from "./sections/Navbar";
 import { Hero } from "./sections/Hero";
+import Skills from "./sections/Skills";
+import Experience from "./sections/Experience";
 import Showcase from "./sections/Showcase";
+import Achievements from "./sections/Achievements";
+import Contact from "./sections/Contact";
 import OceanScene from "./sections/HeroModel/OceanScene";
 import { PanProvider, usePan } from "./context/PanProvider";
 import { useEffect, useState } from "react";
@@ -26,8 +30,9 @@ function AppComponent() {
   }, []);
   return (
     <div>
+      <Navbar />
       { (
-        <div className={`hero-3d-layout transition-opacity duration-500 ${startLoading ? "opacity-100" : "opacity-0"}`}>
+        <div className={`hero-3d-layout transition-opacity duration-500 fixed top-0 left-0 w-full h-full z-0 pointer-events-none ${startLoading ? "opacity-100" : "opacity-0"}`}>
           <Canvas
             camera={{ fov: 55, near: 1, far: 20000 }}
             style={{
@@ -47,7 +52,11 @@ function AppComponent() {
       )}
       <div className="relative select-none" style={{ pointerEvents: "none" }}>
         <Hero></Hero>
+        <Skills />
+        <Experience />
         <Showcase></Showcase>
+        <Achievements />
+        <Contact />
       </div>
     </div>
   );

@@ -1,6 +1,4 @@
-import AnimatedCounter from "../components/AnimatedCounter";
 import { Button } from "../components/Button";
-import OceanScene from "./HeroModel/OceanScene";
 import { words } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -23,7 +21,7 @@ const Hero = () => {
     );
   });
   return (
-    <section id="hero" className="relative overflow-hidden">
+    <section id="about" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
         <img src="/images/bg.png" alt="background" />
       </div>
@@ -33,6 +31,9 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
+                Hi, I'm <span className="text-blue-500">Your Name</span>
+              </h1>
+              <h1 className="text-4xl md:text-6xl font-bold mt-2">
                 Shaping
                 <span className="slide">
                   <span className="wrapper">
@@ -53,16 +54,19 @@ const Hero = () => {
                 </span>
               </h1>
               <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
             </div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
-              labore eligendi fugit.
-            </p>
+            <div className="text-gray-300 text-lg leading-relaxed max-w-2xl">
+              <p className="mb-4">
+                Hello! I'm a passionate developer building my portfolio. I love creating visuals and functional web applications.
+              </p>
+              <p>
+                My journey involves learning new technologies and applying them in real-world projects. I'm constantly looking for opportunities to grow and collaborate.
+              </p>
+            </div>
             <Button
               className="md:w-80 md:h-16 w-60 h-12 pointer-events-auto"
               id="button1"
-              text="See my work"
+              text="Contact Me"
             ></Button>
           </div>
         </header>
@@ -70,7 +74,6 @@ const Hero = () => {
         
       
       </div>
-      <AnimatedCounter></AnimatedCounter>
     </section>
   );
 };

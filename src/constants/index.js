@@ -1,19 +1,27 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
-  },
-  {
-    name: "Experience",
-    link: "#experience",
+    name: "About",
+    link: "#about",
   },
   {
     name: "Skills",
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Experience",
+    link: "#experience",
+  },
+  {
+    name: "Projects",
+    link: "#projects",
+  },
+  {
+    name: "Achievements",
+    link: "#achievements",
+  },
+  {
+    name: "Contact",
+    link: "#contact",
   },
 ];
 
@@ -29,10 +37,9 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 10, suffix: "+", label: "Projects Completed" },
+  { value: 15, suffix: "+", label: "Technologies Learned" },
+  { value: 500, suffix: "+", label: "Commits Pushed" },
 ];
 
 const logoIconsList = [
