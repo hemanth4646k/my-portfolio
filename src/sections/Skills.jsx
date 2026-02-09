@@ -75,11 +75,11 @@ const Skills = () => {
           },
         });
 
-        // 1. Header stretches in
+        // 1. Header fades in and moves into place
         tl.fromTo(
           header,
-          { scaleX: 0, autoAlpha: 0 },
-          { scaleX: 1, autoAlpha: 1, duration: 0.5, ease: 'power3.out' }
+          { y: 30, autoAlpha: 0 },
+          { y: 0, autoAlpha: 1, duration: 0.5, ease: 'power3.out' }
         );
 
         // 2. Stem grows downward

@@ -13,7 +13,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-5 sm:px-10">
         <div className="flex items-center justify-between py-5">
           {/* Logo */}
-          <a href="/" className="text-white text-lg tracking-[0.25em] font-light uppercase hover:text-blue-400 transition-colors drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <a 
+            href="/" 
+            className="text-white text-lg tracking-[0.25em] font-light uppercase hover:text-blue-400 transition-colors drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
             Hemanth Sai Somaraju
           </a>
 

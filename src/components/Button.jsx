@@ -4,17 +4,6 @@ const Button = ({ text, href, className }) => {
     <a 
       href={href || "#"} 
       className={`${className ?? " "} cta-wrapper`}
-      onClick={(e) => {
-        if (href && href.startsWith("#")) {
-          e.preventDefault();
-          const target = document.querySelector(href);
-          if (target) {
-            const offset = window.innerHeight * 0.15;
-            const top = target.getBoundingClientRect().top + window.scrollY - offset;
-            window.scrollTo({ top, behavior: 'smooth' });
-          }
-        }
-      }}
     >
       <div className="cta-button group">
         <div className="bg-circle"></div>
