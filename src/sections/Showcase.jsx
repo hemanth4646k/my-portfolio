@@ -50,47 +50,92 @@ const Showcase = () => {
   return (
     <section ref={sectionRef} id="projects" className="relative z-10 app-showcase pointer-events-auto">
       <div className="w-full">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-teal-400 to-blue-500">
+            Projects
+          </h2>
+        </div>
         <div className="showcase-layout">
           {/* leftside */}
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Project1" />
+              <img src="/images/linkstate.png" alt="Link State Routing Simulator" />
             </div>
             <div className="text-content">
               <h2>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
-                atque.
+                <a
+                  href="https://github.com/hemanth4646k/Link-State-Routing-Simulator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition-colors"
+                >
+                  Link State Routing Simulator ↗
+                </a>
               </h2>
               <p className="text-white-50 md:text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                dolorem deleniti vel laboriosam voluptatum maiores voluptas aut
-                reprehenderit tenetur nisi.
+                A visual, interactive simulator demonstrating how link state routing protocols operate in computer networks. Drag-and-drop routers, define custom link costs, watch animated LSP flooding, and compute shortest paths via Dijkstra&apos;s Algorithm — all in the browser.
               </p>
+              <div className="flex flex-wrap gap-2 mt-3">
+                {['React', 'GSAP', 'JavaScript', "Dijkstra's Algorithm"].map((t) => (
+                  <span key={t} className="px-3 py-1 text-sm rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300">
+                    {t}
+                  </span>
+                ))}
+              </div>
+
             </div>
           </div>
           {/* rightside */}
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
-                <img src="/images/project2.png" alt="project2" />
+                <img src="/images/code_sync.png" alt="CodeSathi" />
               </div>
-              <h2>Project2</h2>
+              <h2>
+                <a
+                  href="https://github.com/hemanth4646k/code_sync"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition-colors"
+                >
+                  CodeSathi ↗
+                </a>
+              </h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                blanditiis iste asperiores eveniet non itaque possimus eos, unde
-                dolorum sed!
+                A real-time collaborative code editing platform with live cursor tracking, file system synchronization, integrated chat, and user authentication — powered by Socket.IO, Monaco Editor, and MongoDB.
               </p>
+              <div className="flex flex-wrap gap-2 mt-3">
+                {['React', 'Node.js', 'Socket.IO', 'MongoDB', 'Monaco Editor'].map((t) => (
+                  <span key={t} className="px-3 py-1 text-sm rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300">
+                    {t}
+                  </span>
+                ))}
+              </div>
             </div>
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffe2db]">
-                <img src="/images/project2.png" alt="project2" />
+                <img src="/images/getcurex.png" alt="Get Curex Clone" />
               </div>
-              <h2>Project2</h2>
+              <h2>
+                <a
+                  href="https://github.com/hemanth4646k/get-curex-clone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition-colors"
+                >
+                  Get Curex Clone ↗
+                </a>
+              </h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                blanditiis iste asperiores eveniet non itaque possimus eos, unde
-                dolorum sed!
+                A pixel-perfect clone of the Curex healthcare platform with 30+ fully built pages, responsive design, reusable UI components, and client-side routing — deployed on Vercel.
               </p>
+              <div className="flex flex-wrap gap-2 mt-3">
+                {['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'React Router'].map((t) => (
+                  <span key={t} className="px-3 py-1 text-sm rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300">
+                    {t}
+                  </span>
+                ))}
+              </div>
             </div>
             
           </div>

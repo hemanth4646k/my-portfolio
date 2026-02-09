@@ -31,43 +31,51 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
-                Hi, I'm <span className="text-blue-500">Your Name</span>
+                Hi, I'm <span className="text-blue-500">Hemanth</span>
               </h1>
-              <h1 className="text-4xl md:text-6xl font-bold mt-2">
-                Shaping
+              <div className="text-3xl sm:text-4xl md:text-6xl font-bold mt-2 flex items-center gap-3">
+                <span>I'm a</span>
                 <span className="slide">
                   <span className="wrapper">
-                    {words.map((word) => (
+                    {words.map((word, i) => (
                       <span
-                        key={word.text}
-                        className="flex items-center md:gap-3 gap-1 pb-2"
+                        key={i}
+                        className="flex items-center pb-2 whitespace-nowrap"
                       >
-                        <img
-                          src={word.imgPath}
-                          alt={word.text}
-                          className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
-                        />
                         <span>{word.text}</span>
                       </span>
                     ))}
                   </span>
                 </span>
-              </h1>
-              <h1>into Real Projects</h1>
+              </div>
             </div>
-            <div className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-              <p className="mb-4">
-                Hello! I'm a passionate developer building my portfolio. I love creating visuals and functional web applications.
-              </p>
-              <p>
-                My journey involves learning new technologies and applying them in real-world projects. I'm constantly looking for opportunities to grow and collaborate.
-              </p>
+            <div className="relative text-white text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl p-6 rounded-2xl bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.08)_0%,transparent_100%)]">
+              {/* Radially fading backdrop blur */}
+              <div
+                className="absolute inset-0 rounded-2xl backdrop-blur-md pointer-events-none"
+                style={{
+                  maskImage: 'radial-gradient(ellipse at center, black 0%, transparent 75%)',
+                  WebkitMaskImage: 'radial-gradient(ellipse at center, black 0%, transparent 75%)',
+                }}
+              />
+              <div className="relative z-10 text-center">
+                <p>
+                  Full-Stack Developer specializing in the MERN stack.
+                  </p>
+                  <p>My background in competitive programming allows me to write optimized, clean code and solve complex backend challenges with ease.
+                </p>
+                <p className="mt-4">
+                  I’m eager to contribute to impactful projects and exchange knowledge. Let's build something great together.
+                </p>
+              </div>
             </div>
-            <Button
-              className="md:w-80 md:h-16 w-60 h-12 pointer-events-auto"
-              id="button1"
-              text="Contact Me"
-            ></Button>
+            <div className="w-full max-w-2xl flex justify-center">
+              <Button
+                className="w-1/2 h-12 sm:h-14 md:h-16 pointer-events-auto"
+                href="#contact"
+                text="Contact Me"
+              />
+            </div>
           </div>
         </header>
         {/* Right Side 3d model*/}

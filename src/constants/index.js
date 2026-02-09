@@ -8,6 +8,10 @@ const navLinks = [
     link: "#skills",
   },
   {
+    name: "Achievements",
+    link: "#achievements",
+  },
+  {
     name: "Experience",
     link: "#experience",
   },
@@ -16,24 +20,20 @@ const navLinks = [
     link: "#projects",
   },
   {
-    name: "Achievements",
-    link: "#achievements",
-  },
-  {
     name: "Contact",
     link: "#contact",
   },
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Competitive Programmer" },
+  { text: "MERN Developer" },
+  { text: "Software Engineer" },
+  { text: "Logic Designer" },
+  { text: "Competitive Programmer" },
+  { text: "MERN Developer" },
+  { text: "Software Engineer" },
+  { text: "Logic Designer" },
 ];
 
 const counterItems = [

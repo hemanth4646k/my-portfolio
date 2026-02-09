@@ -9,21 +9,21 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[1000] bg-transparent">
+    <nav className="fixed top-0 left-0 right-0 z-[1000] bg-gradient-to-b from-black/40 to-transparent backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-5 sm:px-10">
         <div className="flex items-center justify-between py-5">
           {/* Logo */}
-          <a href="/" className="text-white font-bold text-3xl hover:text-blue-400 transition-colors drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            MyPortfolio
+          <a href="/" className="text-white text-lg tracking-[0.25em] font-light uppercase hover:text-blue-400 transition-colors drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            Hemanth Sai Somaraju
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex gap-8">
+          <div className="hidden md:flex gap-2">
             {navLinks.map((item) => (
               <a
                 key={item.name}
                 href={item.link}
-                className="text-white hover:text-blue-400 transition-colors text-lg font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+                className="text-cyan-50 hover:text-cyan-200 px-4 py-2 rounded-lg hover:bg-white/10 transition-all duration-200 text-sm tracking-wider font-medium uppercase drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
               >
                 {item.name}
               </a>

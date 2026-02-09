@@ -6,6 +6,7 @@ import Experience from "./sections/Experience";
 import Showcase from "./sections/Showcase";
 import Achievements from "./sections/Achievements";
 import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 import OceanScene from "./sections/HeroModel/OceanScene";
 import { PanProvider, usePan } from "./context/PanProvider";
 import { useEffect, useState } from "react";
@@ -53,10 +54,11 @@ function AppComponent() {
       <div className="relative select-none" style={{ pointerEvents: "none" }}>
         <Hero></Hero>
         <Skills />
+        <Achievements />
         <Experience />
         <Showcase></Showcase>
-        <Achievements />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

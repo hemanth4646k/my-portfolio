@@ -127,10 +127,9 @@ const Skills = () => {
       className="w-full min-h-screen relative text-white flex flex-col items-center justify-start pointer-events-auto py-20 px-4"
     >
       {/* Title */}
-      <h2 className="text-5xl md:text-7xl font-bold mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
+      <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-teal-400 to-blue-500">
         Tech Stack
       </h2>
-      <p className="text-gray-400 text-lg mb-16 text-center">Technologies I work with</p>
 
       {/* Three Column Layout */}
       <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
