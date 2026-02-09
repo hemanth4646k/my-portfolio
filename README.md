@@ -93,6 +93,25 @@ src/
 - `npm run preview`: Preview the production build locally.
 - `npm run lint`: Run ESLint to check for code quality.
 
+## 🚀 Deployment (Vercel)
+
+The easiest way to deploy this Vite app is using [Vercel](https://vercel.com).
+
+1.  **Push to GitHub**: Ensure your project is pushed to a GitHub repository.
+2.  **Import to Vercel**:
+    - Go to Vercel Dashboard > **Add New...** > **Project**.
+    - Import your GitHub repository.
+3.  **Configure Build Settings**:
+    - Framework Preset: **Vite** (Should be detected automatically).
+    - Build Command: `npm run build`
+    - Output Directory: `dist`
+4.  **Environment Variables**:
+    - Add the same variables from your `.env` file to the Vercel project settings:
+        - `VITE_APP_EMAILJS_SERVICE_ID`
+        - `VITE_APP_EMAILJS_TEMPLATE_ID`
+        - `VITE_APP_EMAILJS_PUBLIC_KEY`
+5.  **Deploy**: Click **Deploy**.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
